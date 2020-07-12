@@ -4,7 +4,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_ARCH),arm64)
+ifeq ($(TARGET_ARCH), arm64)
  TARGET_CROSS_COMPILE := aarch64-linux-android-
 else
  $(error TARGET_ARCH=$(TARGET_ARCH) is not supported. Only arm64 is supported)
